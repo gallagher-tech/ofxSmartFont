@@ -65,7 +65,7 @@ class ofxSmartFont {
             }   else {
                 mName = file.substr(file.find_last_of("/\\") + 1);
             }
-            if (ttf.load(mFile, mSize) == false){
+		    if (ttf.load(mFile, mSize, true, true, false, 0.3, 72) == false) {
                 log("ERROR!! file : " + mFile + " NOT FOUND");
             }   else{
                 log("new font added : " +mName+" @ pt size "+std::to_string(mSize));
