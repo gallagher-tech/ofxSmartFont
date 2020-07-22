@@ -179,7 +179,7 @@ ofxSmartFont::ofxSmartFont(std::string file, int size, std::string name)
 		log("ERROR!! file : " + mFile + " NOT FOUND");
 	}
 	else {
-		ofLogNotice() << "has character set" << ttf.hasFullCharacterSet();
+		//ofLogNotice() << "has character set" << ttf.hasFullCharacterSet();
 
 		log("new font added : " + mName + " @ pt size " + std::to_string(mSize));
 
@@ -202,7 +202,7 @@ ofxSmartFont::ofxSmartFont(ofTrueTypeFontSettings settings, std::string name)
 		log("ERROR!! file : " + settings.fontName.string() + " NOT FOUND");
 	}
 	else {
-		ofLogNotice() << "has character set" << ttf.hasFullCharacterSet();
+		//ofLogNotice() << "has character set" << ttf.hasFullCharacterSet();
 
 		log("new font added : " + mName + " @ pt size " + std::to_string(mSize));
 	}
