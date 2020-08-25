@@ -74,6 +74,11 @@ float ofxSmartFont::getLineHeight()
 	return ttf.getLineHeight();
 }
 
+void ofxSmartFont::setLetterSpacing(float spacing)
+{
+	ttf.setLetterSpacing(1.0f + spacing);
+}
+
 /*
 	static methods
 */

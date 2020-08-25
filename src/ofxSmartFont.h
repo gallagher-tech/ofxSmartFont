@@ -43,6 +43,9 @@ public:
 	float height(std::string s, int x = 0, int y = 0);
 	float getLineHeight();
 
+	// formatting
+	void setLetterSpacing(float spacing);
+
 	/*
 		static methods
 	*/
