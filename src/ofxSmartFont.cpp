@@ -194,6 +194,7 @@ ofxSmartFont::ofxSmartFont(std::string file, int size, std::string name)
 ofxSmartFont::ofxSmartFont(ofTrueTypeFontSettings settings, std::string name)
 {
 	mSize = settings.fontSize;
+	mFile = settings.fontName.string();
 
 	if (name != "") {
 		mName = name;
